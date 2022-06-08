@@ -1,5 +1,5 @@
 param workspaceName string
-param connectorName string = 'Defender'
+param connectorName string
 
 var connectorId = uniqueString(connectorName)
 
