@@ -3,9 +3,9 @@ param connectorName string
 
 var connectorId = uniqueString(connectorName)
 
-//resource workspace 'Microsoft.OperationalInsights/workspaces@2020-08-01' existing = {
+resource workspace 'Microsoft.OperationalInsights/workspaces@2020-08-01' existing = {
   //name: workspaceName
-//}
+}
 
 resource M365D_Incident 'Microsoft.SecurityInsights/dataConnectors@2019-01-01-preview' = { 
   scope: workspace
