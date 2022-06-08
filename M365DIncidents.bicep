@@ -1,5 +1,5 @@
 param workspaceName string
-param connectorName string
+param connectorName string = "M365Defender"
 
 var connectorId = uniqueString(connectorName)
 
