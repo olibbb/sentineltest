@@ -1,5 +1,5 @@
 param workspaceName string
-param connectorName string
+param connectorName string = "O365Connector"
 
 var connectorId = uniqueString(connectorName)
 
